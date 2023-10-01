@@ -58,6 +58,9 @@ export const routes = [
         database.update("tasks", id, {
           title,
           description,
+          createdAt: task.createdAt,
+          updatedAt: task.updatedAt,
+          completed_at: task.completed_at,
         });
       }
 
@@ -65,6 +68,9 @@ export const routes = [
         database.update("tasks", id, {
           title,
           description: task.description,
+          createdAt: task.createdAt,
+          updatedAt: task.updatedAt,
+          completed_at: task.completed_at,
         });
       }
 
@@ -72,6 +78,9 @@ export const routes = [
         database.update("tasks", id, {
           title: task.title,
           description,
+          createdAt: task.createdAt,
+          updatedAt: task.updatedAt,
+          completed_at: task.completed_at,
         });
       }
 
