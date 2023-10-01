@@ -2,9 +2,9 @@
 
  <p align='center'>
 
-<img src="https://img.shields.io/github/repo-size/Savio-Anjos/API-Task-List?color=1890FF">
-<img src="https://img.shields.io/github/languages/count/Savio-Anjos/API-Task-List?color=1890FF">
-<img src="https://img.shields.io/github/last-commit/Savio-Anjos/API-Task-List?color=1890FF">  
+<img src="https://img.shields.io/github/repo-size/Savio-Anjos/API-Task-List?color=00B94A">
+<img src="https://img.shields.io/github/languages/count/Savio-Anjos/API-Task-List?color=00B94A">
+<img src="https://img.shields.io/github/last-commit/Savio-Anjos/API-Task-List?color=00B94A">  
 </p>
 
 ## 🚀 Tecnologias
