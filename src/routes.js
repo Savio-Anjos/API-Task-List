@@ -44,4 +44,40 @@ export const routes = [
       return res.writeHead(201).end();
     },
   },
+  {
+    method: "PUT",
+    path: buildRoutePath("/tasks/:id"),
+    handler: (req, res) => {
+      const { id } = req.params;
+
+      const task = database.getTask("tasks", id);
+
+      const { title, description } = req.body ? req.body : task;
+
+      console.log(req.body);
+
+      if (title && description) {
+        database.update("tasks", id, {
+          title,
+          description,
+        });
+      }
+
+      if (title && !description) {
+        database.update("tasks", id, {
+          title,
+          description: task.description,
+        });
+      }
+
+      if (!title && description) {
+        database.update("tasks", id, {
+          title: task.title,
+          description,
+        });
+      }
+
+      return res.writeHead(204).end();
+    },
+  },
 ];
