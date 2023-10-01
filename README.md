@@ -15,7 +15,7 @@ Esse projeto está utilizando as seguintes tecnologias:
 
 ## 📜 Descrição
 
-Esse projeto é um desafio proposto no curso Ignite da [Rocketseat](https://www.rocketseat.com.br/), o obejetivo foi criar uma API utilizando apenas node.js sem nenhum framework para conlocar em prática os fundamentos da tecnologia.
+Esse projeto é um desafio proposto no curso Ignite da [Rocketseat](https://www.rocketseat.com.br/), o obejetivo foi criar uma API utilizando apenas node.js sem nenhum framework para colocar em prática os fundamentos da tecnologia.
 
 ## ⚙️ Como funciona?
 
@@ -42,7 +42,7 @@ cd API-Task-List
 ### Inicie a aplicação
 
 ```bash
-nom run dev
+npm run dev
 ```
 
 ## 🖼️ Layout
