@@ -54,8 +54,6 @@ export const routes = [
 
       const { title, description } = req.body ? req.body : task;
 
-      console.log(req.body);
-
       if (title && description) {
         database.update("tasks", id, {
           title,
@@ -76,6 +74,18 @@ export const routes = [
           description,
         });
       }
+
+      return res.writeHead(204).end();
+    },
+  },
+
+  {
+    method: "DELETE",
+    path: buildRoutePath("/tasks/:id"),
+    handler: (req, res) => {
+      const { id } = req.params;
+
+      database.delete("tasks", id);
 
       return res.writeHead(204).end();
     },
